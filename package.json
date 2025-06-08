@@ -1,0 +1,28 @@
+{
+  "name": "@mountains-digital/ff4cf-client",
+  "version": "1.0.0",
+  "description": "Feature Flags for Cloudflare (F4CF) RPC client library for Cloudflare Workers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["feature-flags", "cloudflare-workers", "ff4cf"],
+  "author": "Mountains Digital",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mountains-digital/ff4cf-client.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
